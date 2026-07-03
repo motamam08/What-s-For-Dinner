@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What's For Dinner</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- MediaQuary -->
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body class="bg-cream">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 shadow-sm">
+      <div class="container-xxl">
+        <div class="d-flex justify-content-center align-items-center">
+          <div
+            class="nav-icon navbar-brand shadow-sm rounded-circle d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-utensils text-white"></i>
+          </div>
+          <div class="logo-text">
+            <h1 class="fw-bold m-0">What's For Dinner</h1>
+            <p class="m-0 fs-12">Your daily meal inspiration</p>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <i class="fa-regular fa-bookmark fs-5"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-history fs-5"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-gear fs-5"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img
+                  src="images/avatar.jpg"
+                  alt="Profile"
+                  class="rounded-circle profile"
+                  width="40"
+                  height="40"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="py-5" id="mainContant">
+      <div class="container-fluid  container-xl">
+        <div class="card border-0 rounded-5 shadow-sm overflow-hidden " >
+          <div class="row g-0 flex-column flex-lg-row">
+            <div class="col-lg-5 position-relative" id="info">
+              
+
+
+            </div>
+
+            <div class="col-12 col-lg-7 d-flex justify-content-between" >
+              <div
+                class="card-body  maxheight card-scroll p-40 d-flex flex-column justify-content-between">
+                <div class="d-flex gap-2 mb-3 justify-content-end d-md-none">
+                  <div
+                    class="d-flex justify-content-center align-items-center icon rounded-3"
+                  >
+                    <i class="fa-solid fa-bookmark"></i>
+                  </div>
+                  <div
+                    class="d-flex justify-content-center align-items-center icon rounded-3"
+                  >
+                    <i class="fa-solid fa-share-nodes"></i>
+                  </div>
+                </div>
+               <div class="d-flex justify-content-between">
+                
+                <div id="header">
+                    
+
+                  
+                </div>
+                 <div class="gap-2 mb-3 justify-content-end d-md-flex d-none">
+                  <div
+                    class="d-flex justify-content-center align-items-center icon rounded-3"
+                  >
+                    <i class="fa-solid fa-bookmark"></i>
+                  </div>
+                  <div
+                    class="d-flex justify-content-center align-items-center icon rounded-3"
+                  >
+                    <i class="fa-solid fa-share-nodes"></i>
+                  </div>
+                </div>
+               </div>
+
+               <div id="warningMessage">
+                
+               </div>
+
+                <!-- navs&tabs -->
+                <div class=" border-bottom mb-3">
+                  <ul
+                  class="nav nav-underline mb-4 flex-nowrap custom-tabs "
+                  id="recipeTab"
+                  role="tablist"
+                >
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active fs-12 text-nowrap"
+                      id="ingredients-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#ingredients-pane"
+                      type="button"
+                      role="tab"
+                    >
+                        <i class="fa-solid fa-list-check"></i>
+                      Ingredients
+                    </button>
+                  </li>
+                  <li class="nav-item fs-12 text-nowrap" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="instructions-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#instructions-pane"
+                      type="button"
+                      role="tab"
+                    >
+                        <i class="fa-solid fa-book-open"></i>
+                        Instructions
+                    </button>
+                  </li>
+                  <li class="nav-item fs-12 text-nowrap" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="nutrition-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nutrition-pane"
+                      type="button"
+                      role="tab"
+                    >
+                        <i class="fa-solid fa-chart-pie"></i>
+                      Nutrition
+                    </button>
+                  </li>
+                  <li class="nav-item fs-12 text-nowrap" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="chef-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#chef-pane"
+                      type="button"
+                      role="tab"
+                    >
+                        <i class="fa-solid fa-lightbulb"></i>
+                      Chef's Tips
+                    </button>
+                  </li>
+                </ul>
+                </div>
+
+                <div class="tab-content mb-3" id="recipeTabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="ingredients-pane"
+                    role="tabpanel"
+                    aria-labelledby="ingredients-tab"
+                    tabindex="0"
+                  >
+                    <div class="row g-3">
+                      <div class="bg-cream p-3 rounded-4 overflow-y-auto" >
+                        <div>
+                            <ul class="list-unstyled d-flex flex-column gap-3 m-0 content-scroll" id="ingredientes">
+                          
+                          
+                          </ul>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div
+                    class="tab-pane fade p-3"
+                    id="instructions-pane"
+                    role="tabpanel"
+                    aria-labelledby="instructions-tab"
+                    tabindex="0"
+                  >
+                   <div id="instructions" class="content-scroll">
+                    
+                   </div>
+                  </div>
+
+                  <div
+                    class="tab-pane fade"
+                    id="nutrition-pane"
+                    role="tabpanel"
+                    aria-labelledby="nutrition-tab"
+                    tabindex="0"
+                  >
+                    <div class="row gy-3 content-scroll" id="nutrition">
+                        
+
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="chef-pane"
+                    role="tabpanel"
+                    aria-labelledby="chef-tab"
+                    tabindex="0">
+
+                    <div id="tips" class="content-scroll">
+                      
+                    </div>
+
+                  </div>
+                </div>
+                <div class="border-top"></div>
+
+                <button
+                  class="btn btn-orange fw-bold text-white mt-3 d-flex justify-content-center align-items-end gap-2 w-33" 
+                  id="nextBtn"
+                >
+                <i class="fa-solid fa-arrows-rotate"></i>
+                  Try Another Recipe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

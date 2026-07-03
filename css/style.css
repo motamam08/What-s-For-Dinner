@@ -1,0 +1,230 @@
+* Global Style :root {
+  --primary-color: #ff5a00;
+
+  --text-hover-color: #e55c00;
+
+  --text-light-gray: #4a5565;
+
+  --text-dark-gray: #364153;
+
+  --text-balck: #101828;
+
+  --font-sans:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  --font-mono: "Courier New", Courier, monospace;
+}
+body {
+  background-color: #fffbea;
+}
+
+/* ? Utilites */
+.fs-12 {
+  font-size: 12px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-18 {
+  font-size: 18px !important;
+}
+.p-40{
+    padding: 40px;
+}
+.w-33{
+    width: 33.33%;
+}
+.card-scroll{
+     overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #fe886a4d transparent;
+}
+.content-scroll {
+  height: 340px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #fe886a4d transparent;
+}
+.profile{
+    border: 1.5px solid #ffb86a;
+}
+.warning{
+    background-color: #fef2f2;
+    border-radius: 8px;
+    border-left: 4px solid #fb2c36;
+    h6{
+        font-size: 16px;
+        color: #9f0712;
+    }
+    i{
+        color: #fb2c36;
+    }
+    p{
+        font-size: 14px;
+        color: #e7000b;
+    }
+}
+.maxheight{
+    max-height: 800px;
+}
+
+/* * navbar */
+/* إعدادات الخلفية المخصصة والعرض الأقصى */
+.bg-cream {
+  background-color: #fffdf0 !important;
+}
+
+/* الألوان الخاصة بهوية التصميم */
+.text-orange {
+  color: #ff4a11 !important;
+}
+
+.btn-orange {
+  background-image: linear-gradient(
+    to right,
+    oklch(0.705 0.213 47.604) 0%,
+    oklch(0.637 0.237 25.331) 100%
+  ) !important;
+  border: none;
+  transition: background-color 0.2s;
+  padding: 12px 24px;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.btn-orange:hover {
+  background-image: linear-gradient(
+    to right,
+    oklch(0.646 0.222 41.116) 0%,
+    oklch(0.577 0.245 27.325) 100%
+  ) !important;
+  transform: scale(1.018);
+}
+
+.custom-tabs .nav-link {
+  font-size: calmp(0.75rem, 3vw, 1rem) !important;
+  color: #888 !important;
+  font-weight: 500;
+  border: none;
+  padding: 10px 15px;
+}
+.nav-underline .nav-link.active::after {
+  background-color: #ff4a11 !important;
+}
+
+.num-badge {
+  background-color: #ff6900;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.text-muted-xs {
+  font-size: 11px;
+  color: #888;
+}
+
+.img-column-height {
+  height: 320px;
+}
+
+.info-bar {
+  bottom: 20px;
+  width: 85%;
+  z-index: 5;
+}
+nav {
+  .logo-text {
+    h1 {
+      color: var(--text-balck);
+      font-size: clamp(1.125rem, 4vw, 1.5rem);
+    }
+    p {
+      color: var(--text-light-gray);
+      font-size: clamp(0.75rem, 3vw, 0.875rem);
+    }
+  }
+
+  .nav-icon {
+    background-image: linear-gradient(
+      to right bottom,
+      #ff6900 0%,
+      #fb2c36 100%
+    );
+    width: 3rem;
+    height: 3rem;
+  }
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0;
+  }
+}
+.icon {
+  background-color: #ffedd4;
+  color: #ff4a11;
+  width: 48px;
+  height: 48px;
+}
+.nav-underline {
+  column-gap: 8px;
+}
+.custom-tabs .nav-link.active {
+  color: #ff4a11 !important;
+  font-weight: 600;
+  border-bottom: 2px solid #ff4a11;
+}
+
+.instraction-num {
+  width: 48px;
+  height: 48px;
+  background-color: #ff6900;
+  color: white;
+  margin-right: 8px;
+}
+.bg-gray {
+  background-color: #f9fafb;
+}
+.sm-icon {
+  width: 40px;
+  height: 40px;
+}
+.cal {
+  background-color: #ffedd4;
+  color: #f54900;
+}
+.pro {
+  background-color: #dbeafe;
+  color: #155dfc;
+}
+.carb {
+  background-color: #fef9c2;
+  color: #d08700;
+}
+.fat {
+  background-color: #ffe2e2;
+  color: #e7000b;
+}
+.fiber {
+  background-color: #dbfce7;
+  color: #00a63e;
+}
+.sod {
+  background-color: #fce7f3;
+  color: #e60076;
+}
+.tip {
+  border-left: 4px #ffb900 solid;
+}
+.tip-icon {
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-color: #e17100;
+}
