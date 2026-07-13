@@ -20,4 +20,9 @@
   .container-content-padding {
     padding: 45px !important;
   }
+
+  .btn-orange {
+  padding: 12px 24px;
+  /* max-width: 30%; */
+  }
 }
